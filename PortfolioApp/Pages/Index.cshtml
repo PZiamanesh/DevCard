@@ -25,20 +25,25 @@
 
     <!-- Two -->
     <section id="two">
-        <h2>Projects</h2>
-        <div class="row">
-            @foreach (var project in Model.Projects!)
-            {
-                <article class="col-6 col-12-xsmall work-item">
-                    <a href="images/fulls/@project.ImageFull" class="image fit thumb">
-                        <img src="images/thumbs/@project.ImageThumb" alt="" />
-                    </a>
-                    <h3>@project.Title</h3>
-                    <p style="margin-bottom: 20px">@project.Description</p>
-                    <a href="@project.Url" class="button fit">Go To Site</a>
-                </article>
-            }
-
+        <div class="container">
+            <h2 class="mb-5">Projects</h2>
+            <div class="row">
+                @foreach (var project in Model.Projects!)
+                {
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="images/thumbs/@project.ImageThumb" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">@project.Title</h3>
+                                <p class="card-text">
+                                    @project.Description
+                                </p>
+                                <a href="@project.Url" class="btn btn-dark">Go To Site</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
         </div>
     </section>
 

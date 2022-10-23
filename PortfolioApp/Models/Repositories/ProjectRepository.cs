@@ -12,7 +12,7 @@ public class ProjectRepository : IProjectRepository
             {
                 Id = 1,
                 Title = "PieShop",
-                Description = "la la la",
+                Description = "This is my first project developed with .net6",
                 ImageThumb = "Prg1_Thumb.jpg",
                 ImageFull = "Prg1_Full.jpg",
                 Url = "lalala"

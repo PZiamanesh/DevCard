@@ -1,1 +1,1 @@
-A portfolio web application developed with Asp.Net Core 6 to represent my recent projects to dear customers.
+This application acts as a hub for my other projects.
